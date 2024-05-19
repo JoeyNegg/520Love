@@ -187,7 +187,8 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
             var together = new Date();
-            together.setFullYear(2024, 1, 7);
+            // 修正月份参数，1月应为0
+            together.setFullYear(2024, 1-1, 7);
             together.setHours(20);
             together.setMinutes(0);
             together.setSeconds(0);
